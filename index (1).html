@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Group Documents</title>
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  
+  <!-- Download Documents Section -->
+  <section class="py-12 px-4 md:px-20">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-blue-800 flex justify-center items-center gap-2">
+        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10a10 10 0 0 0 0-20zM11 6h2v6h-2V6zm0 8h2v2h-2v-2z" />
+        </svg>
+        Downloadable Group Documents
+      </h2>
+      <p class="text-gray-600 mt-2">Click on any document to download or preview</p>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-red-500">
+        <div class="flex items-center gap-4 mb-4">
+          <svg class="w-10 h-10 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 
+            2 0 0 0 2-2V8l-6-6H6zM13 9h-2V3.5L18.5 9H13z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold">Mmari Notes</h3>
+            <p class="text-sm text-gray-500">Tourism Development | 2.4MB</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+          Detailed notes on tourism principles, planning and management. Helpful for students and professionals.
+        </p>
+        <a href="attached_document.pdf" download onclick="showDownloadAlert('Mmari Notes')" class="inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">
+          Download PDF
+        </a>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-blue-500">
+        <div class="flex items-center gap-4 mb-4">
+          <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 
+            2 0 0 0 2-2V8l-6-6H6zM13 9h-2V3.5L18.5 9H13z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold">Mwinuka Notes</h3>
+            <p class="text-sm text-gray-500">Airport Ops | 3.1MB</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+          A guide to airline operations, airport logistics and industry best practices.
+        </p>
+        <a href="mwinuka.pdf" download onclick="showDownloadAlert('Mwinuka Notes')" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          Download PDF
+        </a>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-green-500">
+        <div class="flex items-center gap-4 mb-4">
+          <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 
+            2 0 0 0 2-2V8l-6-6H6zM13 9h-2V3.5L18.5 9H13z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold">Attached Resource</h3>
+            <p class="text-sm text-gray-500">Group Files | 1.7MB</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">
+          Compiled group resources for academic and tourism reference, charts & checklists included.
+        </p>
+        <a href="attached-document.pdf" download onclick="showDownloadAlert('Attached Document')" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          Download PDF
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- Optional JavaScript Alert -->
+  <script>
+    function showDownloadAlert(fileName) {
+      alert(`Your file "${fileName}" is being downloaded.`);
+    }
+  </script>
+  
+</body>
+
+</html>
